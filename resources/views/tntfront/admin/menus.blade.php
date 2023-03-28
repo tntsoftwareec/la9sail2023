@@ -1,0 +1,1 @@
+@extends('tntfron.layouts.app')
