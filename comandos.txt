@@ -1,0 +1,15 @@
+
+git clone https://github.com/laravel/laravel.git laravel-app  --descargamos version 9
+cd ~/laravel-app
+docker run --rm -v $(pwd):/app composer install  --instalamos las dpendencias sin crear el container
+
+docker run --rm -v $(pwd):/app  composer require laravel/sail --dev
+
+docker run --rm -v $(pwd):/app php artisan sail:install
+sudo chown -R $USER:$USER ~/laravel-app
+
+composer require laravel/ui
+php artisan ui bootstrap
+git init 
+git add . agrega
+
