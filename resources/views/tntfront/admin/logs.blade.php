@@ -1,0 +1,1 @@
+@extends('tntsoft.layouts.app')
